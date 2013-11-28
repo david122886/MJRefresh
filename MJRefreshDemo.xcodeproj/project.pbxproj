@@ -21,6 +21,11 @@
 		63B794BC18473B7500B8276A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63B7949E18473B7400B8276A /* UIKit.framework */; };
 		63B794C418473B7500B8276A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 63B794C218473B7500B8276A /* InfoPlist.strings */; };
 		63B794C618473B7500B8276A /* MJRefreshDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 63B794C518473B7500B8276A /* MJRefreshDemoTests.m */; };
+		63B794D818473BA300B8276A /* MJRefresh.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 63B794D018473BA300B8276A /* MJRefresh.bundle */; };
+		63B794D918473BA300B8276A /* MJRefreshBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 63B794D318473BA300B8276A /* MJRefreshBaseView.m */; };
+		63B794DA18473BA300B8276A /* MJRefreshFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 63B794D518473BA300B8276A /* MJRefreshFooterView.m */; };
+		63B794DB18473BA300B8276A /* MJRefreshHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 63B794D718473BA300B8276A /* MJRefreshHeaderView.m */; };
+		63B794DE18473BD700B8276A /* TestRefreshViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63B794DD18473BD700B8276A /* TestRefreshViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,16 @@
 		63B794C118473B7500B8276A /* MJRefreshDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MJRefreshDemoTests-Info.plist"; sourceTree = "<group>"; };
 		63B794C318473B7500B8276A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		63B794C518473B7500B8276A /* MJRefreshDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJRefreshDemoTests.m; sourceTree = "<group>"; };
+		63B794D018473BA300B8276A /* MJRefresh.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MJRefresh.bundle; sourceTree = "<group>"; };
+		63B794D118473BA300B8276A /* MJRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefresh.h; sourceTree = "<group>"; };
+		63B794D218473BA300B8276A /* MJRefreshBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshBaseView.h; sourceTree = "<group>"; };
+		63B794D318473BA300B8276A /* MJRefreshBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshBaseView.m; sourceTree = "<group>"; };
+		63B794D418473BA300B8276A /* MJRefreshFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshFooterView.h; sourceTree = "<group>"; };
+		63B794D518473BA300B8276A /* MJRefreshFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshFooterView.m; sourceTree = "<group>"; };
+		63B794D618473BA300B8276A /* MJRefreshHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshHeaderView.h; sourceTree = "<group>"; };
+		63B794D718473BA300B8276A /* MJRefreshHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshHeaderView.m; sourceTree = "<group>"; };
+		63B794DC18473BD700B8276A /* TestRefreshViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestRefreshViewController.h; sourceTree = "<group>"; };
+		63B794DD18473BD700B8276A /* TestRefreshViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestRefreshViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +127,7 @@
 		63B794A018473B7400B8276A /* MJRefreshDemo */ = {
 			isa = PBXGroup;
 			children = (
+				63B794CF18473BA300B8276A /* MJRefresh */,
 				63B794A918473B7500B8276A /* AppDelegate.h */,
 				63B794AA18473B7500B8276A /* AppDelegate.m */,
 				63B794AC18473B7500B8276A /* Main.storyboard */,
@@ -119,6 +135,8 @@
 				63B794B018473B7500B8276A /* ViewController.m */,
 				63B794B218473B7500B8276A /* Images.xcassets */,
 				63B794A118473B7500B8276A /* Supporting Files */,
+				63B794DC18473BD700B8276A /* TestRefreshViewController.h */,
+				63B794DD18473BD700B8276A /* TestRefreshViewController.m */,
 			);
 			path = MJRefreshDemo;
 			sourceTree = "<group>";
@@ -150,6 +168,21 @@
 				63B794C218473B7500B8276A /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		63B794CF18473BA300B8276A /* MJRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				63B794D018473BA300B8276A /* MJRefresh.bundle */,
+				63B794D118473BA300B8276A /* MJRefresh.h */,
+				63B794D218473BA300B8276A /* MJRefreshBaseView.h */,
+				63B794D318473BA300B8276A /* MJRefreshBaseView.m */,
+				63B794D418473BA300B8276A /* MJRefreshFooterView.h */,
+				63B794D518473BA300B8276A /* MJRefreshFooterView.m */,
+				63B794D618473BA300B8276A /* MJRefreshHeaderView.h */,
+				63B794D718473BA300B8276A /* MJRefreshHeaderView.m */,
+			);
+			path = MJRefresh;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,6 +263,7 @@
 			files = (
 				63B794B318473B7500B8276A /* Images.xcassets in Resources */,
 				63B794A518473B7500B8276A /* InfoPlist.strings in Resources */,
+				63B794D818473BA300B8276A /* MJRefresh.bundle in Resources */,
 				63B794AE18473B7500B8276A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,8 +283,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63B794DE18473BD700B8276A /* TestRefreshViewController.m in Sources */,
+				63B794DB18473BA300B8276A /* MJRefreshHeaderView.m in Sources */,
 				63B794B118473B7500B8276A /* ViewController.m in Sources */,
 				63B794AB18473B7500B8276A /* AppDelegate.m in Sources */,
+				63B794DA18473BA300B8276A /* MJRefreshFooterView.m in Sources */,
+				63B794D918473BA300B8276A /* MJRefreshBaseView.m in Sources */,
 				63B794A718473B7500B8276A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
